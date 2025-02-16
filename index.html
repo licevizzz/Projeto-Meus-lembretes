@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Meus Lembretes</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Meus lembretes</strong></a>
+									
+								</header>
+
+							<!-- Banner -->
+							<div class="inner">
+								
+							<section id="lembretes">
+									<h2>Seus Lembretes</h2>
+									<ul id="lista-lembretes"></ul>
+								
+									<input type="text" id="novoLembrete" placeholder="Digite um lembrete">
+									<button id="btnAdicionar">Adicionar</button>
+									<button id="btnLimpar">Limpar Todos</button>
+								</section>
+								
+							</div>
+							
+								<section id="banner">
+									<div class="content">
+										<header>
+											<h1>Criar e adicionar lembretes</h1>
+											<p>Adicione e visualize seus compromissos importantes.</p>
+										</header>
+										<p>Com o Meus Lembretes, você pode organizar suas tarefas diárias de forma rápida e prática. Adicione novos lembretes e mantenha seus compromissos sempre à vista!</p>
+										
+										<ul class="actions">
+											<li><a href="#" class="button big">Adicione um lembrete</a></li>
+										</ul>
+									</div>
+									<span class="image object">
+										<img src="images/agenda.jpg" alt="" />
+									</span>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Perdendo compromissos?</h2>
+									</header>
+									<div class="features">
+										<article>
+											<span class="icon fa-gem"></span>
+											<div class="content">
+												<h3>Consultas médicas</h3>
+												<p>Sabemos como consultas e exames médicos são importantes, por isso aqui você pode anotar e ser notificado para não correr o risco de ficar sem cuidar da saúde.</p>
+											</div>
+										</article>
+										<article>
+											<span class="icon solid fa-paper-plane"></span>
+											<div class="content">
+												<h3>Reuniões Importantes</h3>
+												<p>Dê títulos e adicone o horário daquelas reuniões que você não pode esquecer.</p>
+											</div>
+										</article>
+										<article>
+											<span class="icon solid fa-rocket"></span>
+											<div class="content">
+												<h3>Já realizou essa tarefa?</h3>
+												<p>Você tambémpode excluir atividades que já foram realizadas,  deixando sua lista ainda mais organizada!</p>
+											</div>
+										</article>
+										<article>
+											<span class="icon solid fa-signal"></span>
+											<div class="content">
+												<h3>Nunca mais fique perdido com horários!</h3>
+												<p>Aqui você pode anotar data e horários de seus projetos pessoais e profissionais, deixando seu dia a dia mais organizado e com menos preucupações.</p>
+											</div>
+										</article>
+									</div>
+								</section>
+
+					
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				function adicionarLembrete() {
+					var input = document.getElementById("novoLembrete");
+					var lista = document.getElementById("lista-lembretes");
+			
+					if (input.value.trim() !== "") {
+						var novoItem = document.createElement("li");
+						novoItem.textContent = input.value;
+						lista.appendChild(novoItem);
+						input.value = "";
+					}
+				}
+			</script>
+			
+	</body>
+</html>
